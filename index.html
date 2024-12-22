@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<style>
+
+body {
+    margin: 0;            
+  background-color: #1c1c1c;
+  
+}
+iframe {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 120vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+
+</style>
+<iframe src="https://cdnapisec.kaltura.com/p/3253003/embedPlaykitJs/uiconf_id/55496902?iframeembed=true&playlist_id=1_gv42bab4&config[provider]={%22ks%22:%22djJ8MzI1MzAwM3yftbm_MJEmSswlb5Fp5vfHczFEaLnAk7qmnMm_2nBuBxqq1IS7ev1gUN5m6n2dJ5GKMNhfx_kN-rPnWlTP2j4hV50tUf8Awx-Tbxj0emjBTBoX-2kjlJpFCwHULNrJj9zZluu7lkxW76vpeCFjJf5d%22}&config[plugins]={%22kava%22:{%22disable%22:true}}" style="position:fixed; top:0; left:0; bottom:0; right:0; width:99.8%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no">
+    Your browser doesn't support iframes
+</iframe>
+
+
+<div class="container">
+	<video autoplay controls crossorigin playsinline ></video>
+</div>
+<!-- Plyr resources and browser polyfills are specified in the pen settings -->
+<!-- Hls.js 0.9.x and 0.10.x both have critical bugs affecting this demo. Using fixed git hash to when it was working (0.10.0 pre-release), until https://github.com/video-dev/hls.js/issues/1790 has been resolved -->
+<script src="https://cdn.rawgit.com/video-dev/hls.js/18bb552/dist/hls.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
+<script src="https://unpkg.com/plyr@3"></script>
